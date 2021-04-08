@@ -1,6 +1,8 @@
 # OXNet
 Code for paper "OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays"
 
+Will release upon formal publication.
+
 # Paper
 Pdf link of the paper: https://arxiv.org/abs/2104.03218
 
