@@ -284,7 +284,8 @@ def main(args=None):
                 print('Evaluating val dataset')
 
                 val_res, val_g_aucs, val_l_aucs = coco_eval.evaluate_coco(dataset_val, retinanet,
-                                                                          experiment_name=parser.experiment_name)
+                                                                          experiment_name=parser.experiment_name,
+                                                                          num_classes=dataset_train.num_classes())
                 logger.info(
                     'VAL | Epoch: {}\n'.format(epoch_num) + '========= G AUC =========\n{}\n'.format(
                         sum(val_g_aucs) / len(val_g_aucs)) + '========= L AUC =========\n{}\n'.format(
@@ -295,7 +296,8 @@ def main(args=None):
 
                 print('Evaluating test data')
                 test_res, test_g_aucs, test_l_aucs = coco_eval.evaluate_coco(dataset_test, retinanet,
-                                                                             experiment_name=parser.experiment_name)
+                                                                             experiment_name=parser.experiment_name,
+                                                                             num_classes=dataset_train.num_classes())
                 logger.info(
                     'TEST | Epoch: {}\n'.format(epoch_num) + '=== G AUC ===\n{}\n'.format(
                         sum(test_g_aucs) / len(test_g_aucs)) + '=== L AUC ===\n{}\n'.format(
