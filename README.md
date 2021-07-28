@@ -61,3 +61,6 @@ If you find the paper or the code helpful to your own work, please consider cite
 ## TODO list
 1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
 
+## Questions
+
+Please contact 'lyluo@cse.cuhk.edu.hk'
