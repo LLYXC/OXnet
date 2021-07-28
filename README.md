@@ -9,9 +9,13 @@ Please read INSTALL.md for preliminary requirements.
 Due to security concern, we cannot release the dataset. 
 
 To apply OXnet on a custom dataset: 
-Note that the data shall follow the COCO style.
+
+Note that the data shall follow the COCO style;
+
 Put the the json and image file in a same root directory, e.g., root/of/json/and/image/files;
+
 Modify the path to json file (line 62-63) and the path to image files (line 102-103) in retinanet/dataloader.py;
+
 Modify the ```set_name``` in train_oxnet.py (line 92, 94, and 96) or train_retinanet.py (line 72, 74, and 76).
 
 ## Training
