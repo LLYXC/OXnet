@@ -7,7 +7,7 @@ Repository for MICCAI 2021 paper [OXnet: Deep Omni-supervised Thoracic DiseaseDe
 
 ## Preliminary: pytorch-retinanet
 This code is modified from [pytorch-retinanet](https://github.com/yhenon/pytorch-retinanet).
-Please read INSTALL.md for preliminary requirements.
+Please read [INSTALL.md](INSTALL.md) for preliminary requirements.
 Please also make following directories to save the log files and checkpoints:
 ```
 mkdir logs
