@@ -206,13 +206,17 @@ def main(args=None):
                 ]
                 print('Evaluating val dataset')
 
-                val_res = coco_eval.evaluate_coco(dataset_val, retinanet, experiment_name=parser.experiment_name)
+                val_res = coco_eval.evaluate_coco(dataset_val, retinanet, 
+                                                  experiment_name=parser.experiment_name,
+                                                  num_classes = dataset_train.num_classes())
                 logger.info(
                     'VAL | Epoch: {}\n' + ' '.join(['========= {} =========\n{}\n'.format(metric, val_res[metric]) for metric in metric_names])
                                 )
 
                 print('Evaluating test data')
-                test_res = coco_eval.evaluate_coco(dataset_test, retinanet, experiment_name=parser.experiment_name)
+                test_res = coco_eval.evaluate_coco(dataset_test, retinanet, 
+                                                   experiment_name=parser.experiment_name,
+                                                   num_classes = dataset_train.num_classes())
                 logger.info(
                     'TEST | Epoch: {},' + ' '.join(['=== {} ===\n{}\n'.format(metric, test_res[metric]) for metric in metric_names])
                 )
