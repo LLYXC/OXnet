@@ -6,20 +6,24 @@ This code is modified from https://github.com/yhenon/pytorch-retinanet.
 Please read INSTALL.md for preliminary requirements.
 
 ## Dataset preparation
-We use COCO style annotations. Due to security concern, we cannot release the dataset. 
+Due to security concern, we cannot release the dataset. 
 
-To apply OXnet on a custom dataset, 
+To apply OXnet on a custom dataset: 
+Note that the data shall follow the COCO style.
+Put the the json and image file in a same root directory, e.g., root/of/json/and/image/files;
+Modify the path to json file (line 62-63) and the path to image files (line 102-103) in retinanet/dataloader.py;
+Modify the ```set_name``` in train_oxnet.py (line 92, 94, and 96) or train_retinanet.py (line 72, 74, and 76).
 
 ## Training
 To train OXnet:
 ```
-python train_oxnet.py --dataset coco --coco_path /root/of/json/and/image/files --load_pth /path/to/pretrained/model.pt --num_labeled_data 2725 --num_data 13964 --experiment_name debug  --depth 101
+python train_oxnet.py --dataset coco --coco_path root/of/json/and/image/files --load_pth path/to/pretrained/model.pt --num_labeled_data 2725 --num_data 13964 --experiment_name oxnet --depth 101
 ```
-
+Note that in the json file, labeled data are listed at the beginning and unlabeled data are listed behind.
 
 To train RetinaNet as a baseline:
 ```
-python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/files --experiment_name debug  --depth 101
+python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/files --experiment_name retinanet  --depth 101
 ```
 
 ## Citation
@@ -31,4 +35,9 @@ If you find the paper or the code helpful to your own work, please consider cite
       booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
       year={2021}
 }
+```
+
+## TODO list
+```
+1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
 ```
