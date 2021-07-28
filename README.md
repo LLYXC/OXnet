@@ -4,6 +4,11 @@ Code for paper [OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest
 ## Preliminary: pytorch-retinanet
 This code is modified from https://github.com/yhenon/pytorch-retinanet.
 Please read INSTALL.md for preliminary requirements.
+Please also make following directories to save the log files and checkpoints:
+```
+mkdir logs
+mkdir checkpoints
+```
 
 ## Dataset preparation
 Due to security concern, we cannot release the dataset. 
@@ -38,6 +43,5 @@ If you find the paper or the code helpful to your own work, please consider cite
 ```
 
 ## TODO list
-```
 1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
-```
+
