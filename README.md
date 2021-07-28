@@ -7,7 +7,7 @@ Repository for MICCAI 2021 paper [OXnet: Deep Omni-supervised Thoracic DiseaseDe
 
 ## Preliminary: pytorch-retinanet
 This code is modified from [pytorch-retinanet](https://github.com/yhenon/pytorch-retinanet).
-Please read [INSTALL.md](INSTALL.md) for preliminary requirements.
+Please refer to [INSTALL.md](INSTALL.md) for preliminary requirements.
 Please also make following directories to save the log files and checkpoints:
 ```
 mkdir logs
@@ -20,8 +20,8 @@ Due to security concern, we cannot release the dataset.
 To apply OXnet on a custom dataset: 
 1. Note that the data shall follow the COCO style;
 2. Put the the json and image file in a same root directory, e.g., root/of/json/and/image/files;
-3. Modify the path to json file (line 62-63) and the path to image files (line 102-103) in retinanet/dataloader.py;
-4. Modify the ```set_name``` in train_oxnet.py (line 92, 94, and 96) or train_retinanet.py (line 72, 74, and 76).
+3. Modify the path to json file (line 62-63) and the path to image files (line 102-103) in [retinanet/dataloader.py](retinanet/dataloader.py);
+4. Modify the ```set_name``` in [train_oxnet.py](train_oxnet.py) (line 92, 94, and 96) or [train_retinanet.py](train_retinanet.py) (line 72, 74, and 76).
 
 The data tree is as follows:
 ``` 
