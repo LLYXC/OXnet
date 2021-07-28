@@ -46,6 +46,8 @@ To train RetinaNet as a baseline:
 ```
 python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/files --experiment_name retinanet  --depth 101
 ```
+## TODO list
+1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
 
 ## Citation
 If you find the paper or the code helpful to your own work, please consider cite:
@@ -58,8 +60,8 @@ If you find the paper or the code helpful to your own work, please consider cite
 }
 ```
 
-## TODO list
-1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
+### Acknowledgement
+The codes are modified from [pytorch-retinanet](https://github.com/yhenon/pytorch-retinanet). Part of data augmentation is adapted from [STAC](https://github.com/google-research/ssl_detection), and part of the loss is adapted from [GPA-detection](https://github.com/ChrisAllenMing/GPA-detection).
 
 ## Questions
 
