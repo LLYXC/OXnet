@@ -273,7 +273,7 @@ class ResNet(nn.Module):
 
             # for each class
             attention = []
-            for j in range(18):
+            for j in range(lmaps[0].shape[-1]):
                 target_index = j
                 max_val = -1
                 # get local map according to maximum of each level
