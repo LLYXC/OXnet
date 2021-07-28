@@ -164,7 +164,7 @@ def main(args=None):
 
     supervisedLoss     = losses.FocalLoss()    # the loss for supervised classification and regression
     globalLoss         = losses.GlobalClassificationLoss(pos_weight=None, with_logit=True) # global classification loss
-    globalContrastLoss = losses.GlobalContrastiveLoss()     # global prototype loss
+    globalContrastLoss = losses.GlobalContrastiveLoss(num_classes=dataset_train.num_classes())     # global prototype loss
     softFocalLoss      = losses.ConsistencyLoss()  # soft focal loss
 
     use_gpu = True
