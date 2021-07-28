@@ -327,9 +327,9 @@ class GlobalClassificationLoss(nn.Module):
 class GlobalContrastiveLoss(nn.Module):
     # Contrastive loss referenced from https://github.com/ChrisAllenMing/GPA-detection/blob/fedcb501558b6aff8eccf09d319e9712c5473bad/lib/model/adaptive_faster_rcnn/faster_rcnn.py
 
-    def __init__(self):
+    def __init__(self, num_classes):
         super(GlobalContrastiveLoss, self).__init__()
-        self.num_classes = 18
+        self.num_classes = num_classes
         self.margin = 1.
 
     def distance(self, feat_1, feat_2):
