@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.metrics import roc_auc_score
 
 
-def evaluate_coco(dataset, model, threshold=0.05, experiment_name='tmp'):
+def evaluate_coco(dataset, model, threshold=0.05, experiment_name='tmp', num_classes=9):
     model.eval()
 
     with torch.no_grad():
@@ -74,8 +74,8 @@ def evaluate_coco(dataset, model, threshold=0.05, experiment_name='tmp'):
             image_ids.append(dataset.image_ids[index])
 
             # for local auc
-            local_output = torch.zeros(18)
-            for i in range(18):
+            local_output = torch.zeros(num_classes)
+            for i in range(num_classes):
                 idx = torch.where(labels == i)
                 if len(idx[0]) != 0:
                     local_output[i] = scores[idx].sum() / len(idx[0])
@@ -92,7 +92,7 @@ def evaluate_coco(dataset, model, threshold=0.05, experiment_name='tmp'):
         local_preds = np.stack(local_preds, 0)
         g_aucs = []
         l_aucs = []
-        for i in range(18):
+        for i in range(num_classes):
             if i in (1, 2, 4, 5, 6, 7, 14, 15, 17):
                 try:
                     g_aucs.append(roc_auc_score(global_gts[:, i], global_preds[:, i]))
