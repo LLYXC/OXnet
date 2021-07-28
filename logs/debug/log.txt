@@ -1,0 +1,47 @@
+2021-07-28 16:31:33,068 INFO: 
+Begin training at: 2021-07-28 16:31:33
+2021-07-28 16:31:41,711 INFO: Epoch: 0 | Iteration: 0 | Cls loss: 0.11994 | Reg loss: 0.26654 | G cls loss: 0.69315 | Intra loss: 0.00000 | Inter loss: 0.00949 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 1.08912 | lr: 1e-05
+2021-07-28 16:31:53,470 INFO: Epoch: 0 | Iteration: 10 | Cls loss: 0.18559 | Reg loss: 0.39873 | G cls loss: 0.65379 | Intra loss: 0.07417 | Inter loss: 0.03846 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 1.56030 | lr: 1e-05
+2021-07-28 16:40:25,782 INFO: 
+Begin training at: 2021-07-28 16:40:25
+2021-07-28 16:47:53,947 INFO: 
+Begin training at: 2021-07-28 16:47:53
+2021-07-28 16:51:45,723 INFO: 
+Begin training at: 2021-07-28 16:51:45
+2021-07-28 16:52:42,990 INFO: 
+Begin training at: 2021-07-28 16:52:42
+2021-07-28 16:52:46,641 INFO: Epoch: 0 | Iteration: 0 | Classification loss: 1.32509 | Regression loss: 1.00389 | Running loss: 2.32898 | lr: 1e-05
+2021-07-28 16:52:54,375 INFO: Epoch: 0 | Iteration: 10 | Classification loss: 35323.64062 | Regression loss: 202.16449 | Running loss: 176029.71936 | lr: 1e-05
+2021-07-28 16:53:19,126 INFO: 
+Begin training at: 2021-07-28 16:53:19
+2021-07-28 16:53:42,626 INFO: 
+Begin training at: 2021-07-28 16:53:42
+2021-07-28 16:54:55,948 INFO: 
+Begin training at: 2021-07-28 16:54:55
+2021-07-28 16:55:28,835 INFO: 
+Begin training at: 2021-07-28 16:55:28
+2021-07-28 17:23:48,558 INFO: 
+Begin training at: 2021-07-28 17:23:48
+2021-07-28 17:24:37,327 INFO: 
+Begin training at: 2021-07-28 17:24:37
+2021-07-28 17:24:46,484 INFO: Epoch: 0 | Iteration: 0 | Cls loss: 0.64115 | Reg loss: 0.83498 | G cls loss: 0.69315 | Intra loss: 0.00000 | Inter loss: 0.01605 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 2.18534 | lr: 1e-05
+2021-07-28 17:24:58,131 INFO: Epoch: 0 | Iteration: 10 | Cls loss: 0.95227 | Reg loss: 0.81248 | G cls loss: 0.66653 | Intra loss: 0.09773 | Inter loss: 0.06840 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 2.06430 | lr: 1e-05
+2021-07-28 17:25:08,973 INFO: Epoch: 0 | Iteration: 20 | Cls loss: 0.91270 | Reg loss: 0.91711 | G cls loss: 0.64591 | Intra loss: 0.03068 | Inter loss: 0.05372 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 2.23101 | lr: 1e-05
+2021-07-28 17:25:19,110 INFO: Epoch: 0 | Iteration: 30 | Cls loss: 0.92592 | Reg loss: 0.87783 | G cls loss: 0.63345 | Intra loss: 0.03642 | Inter loss: 0.08301 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 2.41837 | lr: 1e-05
+2021-07-28 17:25:30,024 INFO: Epoch: 0 | Iteration: 40 | Cls loss: 0.18518 | Reg loss: 0.26318 | G cls loss: 0.62853 | Intra loss: 0.09015 | Inter loss: 0.03815 | Cls Cons loss: 0.00000 | Reg Cons loss: 0.00000 | Running loss: 2.30794 | lr: 1e-05
+2021-07-28 17:25:41,511 INFO: 
+Begin training at: 2021-07-28 17:25:41
+2021-07-28 17:26:37,177 INFO: 
+Begin training at: 2021-07-28 17:26:37
+2021-07-28 17:26:40,115 INFO: Epoch: 0 | Iteration: 0 | Classification loss: 0.60601 | Regression loss: 0.52397 | Running loss: 1.12998 | lr: 1e-05
+2021-07-28 17:26:47,713 INFO: Epoch: 0 | Iteration: 10 | Classification loss: 27564.28906 | Regression loss: 88.61712 | Running loss: 66225.44171 | lr: 1e-05
+2021-07-28 17:26:55,610 INFO: Epoch: 0 | Iteration: 20 | Classification loss: 23145.45898 | Regression loss: 8.37917 | Running loss: 49675.83423 | lr: 1e-05
+2021-07-28 17:27:07,787 INFO: 
+Begin training at: 2021-07-28 17:27:07
+2021-07-28 17:27:11,141 INFO: Epoch: 0 | Iteration: 0 | Classification loss: 1.14611 | Regression loss: 1.08031 | Running loss: 2.22642 | lr: 1e-05
+2021-07-28 17:27:19,594 INFO: Epoch: 0 | Iteration: 10 | Classification loss: 79372.41406 | Regression loss: 125.18176 | Running loss: 191635.15695 | lr: 1e-05
+2021-07-28 17:32:14,394 INFO: 
+Begin training at: 2021-07-28 17:32:14
+2021-07-28 17:32:17,857 INFO: Epoch: 0 | Iteration: 0 | Classification loss: 1.20887 | Regression loss: 1.00449 | Running loss: 2.21336 | lr: 1e-05
+2021-07-28 17:32:25,672 INFO: Epoch: 0 | Iteration: 10 | Classification loss: 1.16059 | Regression loss: 1.06917 | Running loss: 2.08671 | lr: 1e-05
+2021-07-28 17:32:33,261 INFO: Epoch: 0 | Iteration: 20 | Classification loss: 1.20158 | Regression loss: 0.68807 | Running loss: 2.04479 | lr: 1e-05
