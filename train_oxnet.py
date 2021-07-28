@@ -61,7 +61,7 @@ def main(args=None):
     parser.add_argument('--consistency_rampup', help='Max step for rampup', type=int, default=20.0)
 
     parser.add_argument('--num_labeled_data', help='number of labeled data in the training set.', type=int)
-    parser.add_argument('--num_unlabeled_data', help='number of unlabeled data in the training set.', type=int)
+    parser.add_argument('--num_data', help='number of unlabeled data in the training set.', type=int)
 
     parser.add_argument('--experiment_name', help='experiment name')
 
@@ -119,7 +119,7 @@ def main(args=None):
 
 #    sampler = AspectRatioBasedSampler(dataset_train, batch_size=2, drop_last=False)
     labeled_idxs = list(range(parser.num_labeled_data))
-    unlabeled_idxs = list(range(parser.num_labeled_data, parser.num_unlabeled_data))
+    unlabeled_idxs = list(range(parser.num_labeled_data, parser.num_data))
     labeled_batch, unlabeled_batch = 2, 2
     batch_sampler = TwoStreamBatchSampler(labeled_idxs, unlabeled_idxs, labeled_batch, unlabeled_batch)
     dataloader_train = DataLoader(dataset_train, num_workers=8, collate_fn=tuple_collater, batch_sampler=batch_sampler)
