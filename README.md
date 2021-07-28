@@ -7,7 +7,18 @@ This code is modified from https://github.com/yhenon/pytorch-retinanet. Please r
 ## Dataset preparation
 We use COCO style annotations. Due to security concern, we cannot release the dataset. 
 
-To apply OXnet on custom dataset, 
+To apply OXnet on a custom dataset, 
+
+## Training
+To train OXnet:
+```
+python train_oxnet.py \
+--dataset coco \
+--coco_path /root/of/json/and/image/files \
+--load_pth /path/to/pretrained/model.pt \
+--num_labeled_data 2725 --num_data 13964 \
+--experiment_name debug  --depth 101
+```
 
 ## Citation
 If you find the paper or the code helpful to your own work, please consider cite:
