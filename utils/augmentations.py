@@ -1,9 +1,3 @@
-"""
-Reference from:
-https://github.com/google-research/ssl_detection/blob/master/third_party/auto_augment/auto_augment/augmentations.py
-"""
-"""Transforms used in the Augmentation Policies."""
-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -15,6 +9,12 @@ import numpy as np
 from PIL import ImageOps, ImageEnhance, ImageFilter, Image
 
 # pylint:enable=g-multiple-import
+
+"""
+Reference from:
+https://github.com/google-research/ssl_detection/blob/master/third_party/auto_augment/auto_augment/augmentations.py
+"""
+"""Transforms used in the Augmentation Policies."""
 
 # IMAGE_SIZE = 32
 # What is the dataset mean and std of the images on the training set
