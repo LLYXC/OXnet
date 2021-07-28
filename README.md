@@ -1,6 +1,8 @@
 # OXnet
 Code for paper [OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays](https://arxiv.org/abs/2104.03218)
 
+![oxnet]https://github.com/LLYXC/LLYXC.github.io/blob/master/indexpics/miccai21_oxnet.png
+
 ## Preliminary: pytorch-retinanet
 This code is modified from https://github.com/yhenon/pytorch-retinanet.
 Please read INSTALL.md for preliminary requirements.
