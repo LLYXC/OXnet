@@ -22,11 +22,10 @@ To apply OXnet on a custom dataset:
 4. Modify the ```set_name``` in train_oxnet.py (line 92, 94, and 96) or train_retinanet.py (line 72, 74, and 76).
 
 ## Training
-To train OXnet:
+Note that when there are data of different types of annotations, in the json file, labeled data are listed at the beginning and unlabeled data are listed behind. To train OXnet, :
 ```
 python train_oxnet.py --dataset coco --coco_path root/of/json/and/image/files --load_pth path/to/pretrained/model.pt --num_labeled_data 2725 --num_data 13964 --experiment_name oxnet --depth 101
 ```
-Note that in the json file, labeled data are listed at the beginning and unlabeled data are listed behind.
 
 To train RetinaNet as a baseline:
 ```
@@ -47,4 +46,3 @@ If you find the paper or the code helpful to your own work, please consider cite
 ## TODO list
 1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
 
-## Examples
