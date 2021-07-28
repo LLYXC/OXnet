@@ -1,5 +1,6 @@
-# OXnet
-Code for paper [OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays](https://arxiv.org/abs/2104.03218)
+# OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays
+Repository for MICCAI 2021 paper [OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays](https://arxiv.org/abs/2104.03218)
+by [Luyang Luo](https://llyxc.github.io/), [Hao Chen](https://www.cse.ust.hk/admin/people/faculty/profile/jhc), [Yanning Zhou](https://ynzhou.netlify.app/), [Huangjing Lin](https://www.linkedin.com/in/huangjing-lin-3bb526a0/?originalSubdomain=hk), and [Pheng-Ann Heng](http://www.cse.cuhk.edu.hk/~pheng/)
 
 ![oxnet](https://github.com/LLYXC/LLYXC.github.io/blob/master/indexpics/miccai21_oxnet.png)
 
