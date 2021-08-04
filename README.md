@@ -1,11 +1,3 @@
-# OXNet
-Code for paper "OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays"
-
-Will release upon formal publication.
-
-# Paper
-Pdf link of the paper: https://arxiv.org/abs/2104.03218
-
 # OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays
 by [Luyang Luo](https://llyxc.github.io/), [Hao Chen](https://www.cse.ust.hk/admin/people/faculty/profile/jhc), [Yanning Zhou](https://ynzhou.netlify.app/), [Huangjing Lin](https://www.linkedin.com/in/huangjing-lin-3bb526a0/?originalSubdomain=hk), and [Pheng-Ann Heng](http://www.cse.cuhk.edu.hk/~pheng/)
 
@@ -58,7 +50,6 @@ python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/fil
 1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
 
 ## Citation
->>>>>>> test
 If you find the paper or the code helpful to your own work, please consider cite:
 ```
 @inproceedings{luo2021oxnet,
