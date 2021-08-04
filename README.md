@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # OXNet
 Code for paper "OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays"
 
@@ -7,7 +6,6 @@ Will release upon formal publication.
 # Paper
 Pdf link of the paper: https://arxiv.org/abs/2104.03218
 
-=======
 # OXnet: Deep Omni-supervised Thoracic DiseaseDetection from Chest X-rays
 by [Luyang Luo](https://llyxc.github.io/), [Hao Chen](https://www.cse.ust.hk/admin/people/faculty/profile/jhc), [Yanning Zhou](https://ynzhou.netlify.app/), [Huangjing Lin](https://www.linkedin.com/in/huangjing-lin-3bb526a0/?originalSubdomain=hk), and [Pheng-Ann Heng](http://www.cse.cuhk.edu.hk/~pheng/)
 
@@ -70,8 +68,6 @@ If you find the paper or the code helpful to your own work, please consider cite
       year={2021}
 }
 ```
-<<<<<<< HEAD
-=======
 
 ### Acknowledgement
 The codes are modified from [pytorch-retinanet](https://github.com/yhenon/pytorch-retinanet). Part of data augmentation is adapted from [STAC](https://github.com/google-research/ssl_detection), and part of the loss is adapted from [GPA-detection](https://github.com/ChrisAllenMing/GPA-detection).
@@ -79,4 +75,3 @@ The codes are modified from [pytorch-retinanet](https://github.com/yhenon/pytorc
 ## Questions
 
 Please contact 'lyluo@cse.cuhk.edu.hk'
->>>>>>> test
