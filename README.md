@@ -22,6 +22,7 @@ To apply OXnet on a custom dataset:
 2. Put the the json and image file in a same root directory, e.g., root/of/json/and/image/files;
 3. Modify the path to json file (line 62-63) and the path to image files (line 102-103) in [retinanet/dataloader.py](retinanet/dataloader.py);
 4. Modify the ```set_name``` in [train_oxnet.py](train_oxnet.py) (line 92, 94, and 96) or [train_retinanet.py](train_retinanet.py) (line 72, 74, and 76).
+5. **NOTE** To training the current version of OXnet, you have to prepare both labeled data and unlabeled data. You can create two COCO-style json files for labeled data and unlabeled data and merge these two in one single json file. Say you have **N** labeled data, and **M** unlabeled data, then the beginning **N** data in the merged file should be labeled ones and the followed **M** data are the unlabeled ones. Set **N** and **N+M** to be num_labeled_data and num_data in the training code.
 
 The data tree is as follows:
 ``` 
