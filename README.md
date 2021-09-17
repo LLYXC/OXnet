@@ -38,15 +38,15 @@ The data tree is as follows:
 ```
 
 ## Training
-Note that when there are data of different types of annotations, in the json file, labeled data are listed at the beginning and unlabeled data are listed behind. To train OXnet, :
+Before training OXnet, you may need to train RetinaNet as a baseline, so that the teacher part of the OXnet could generate meaningfule psuedo labels:
+```
+python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/files --experiment_name retinanet  --depth 101
+```
+Note that when there are data of different types of annotations, in the json file, labeled data are listed at the beginning and unlabeled data are listed behind. To train OXnet :
 ```
 python train_oxnet.py --dataset coco --coco_path root/of/json/and/image/files --load_pth path/to/pretrained/model.pt --num_labeled_data 2725 --num_data 13964 --experiment_name oxnet --depth 101
 ```
 
-To train RetinaNet as a baseline:
-```
-python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/files --experiment_name retinanet  --depth 101
-```
 ## TODO list
 1. Modify dataloader to load three types of data simultaneously: fully-annotated, weakly-annotated, and unlabeled.
 
