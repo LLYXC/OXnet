@@ -38,7 +38,7 @@ The data tree is as follows:
 ```
 
 ## Training
-Before training OXnet, you may need to train RetinaNet as a baseline, so that the teacher part of the OXnet could generate meaningfule psuedo labels:
+Before training OXnet, you may need to pre-train a RetinaNet and use the weights to initialize the teacher and the student models in OXnet. In this way, the teacher part of OXnet could generate meaningfule psuedo labels:
 ```
 python train_retinanet.py --dataset coco --coco_path /root/of/json/and/image/files --experiment_name retinanet  --depth 101
 ```
